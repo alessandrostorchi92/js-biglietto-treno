@@ -13,3 +13,11 @@ console.log("couponChildren", couponChildren);
 console.log("couponElders", couponElders);
 console.log("discountPriceChildren", discountPriceChildren);
 console.log("discountPriceElders", discountPriceElders);
+
+if (ageUser < 18) {
+    console.log("L'utente pagherà il prezzo intero scontato del 20%", discountPriceChildren );
+} else if ( ageUser >= 18 && ageUser <= 65) {
+    console.log("L'utente pagherà il prezzo intero", priceInCent);
+} else {
+    console.log("L'utente pagherà il prezzo intero scontato del 40%", discountPriceElders);    
+}
